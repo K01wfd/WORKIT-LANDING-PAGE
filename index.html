@@ -30,48 +30,70 @@
     <main>
       <!-- HERO -->
       <section class="hero">
-        <div class="| container auto-flex">
+        <img
+          class="bg-p-left"
+          src="./images/bg-pattern-1.svg"
+          alt="background pattern"
+        />
+        <img
+          class="bg-p-right"
+          src="./images/bg-pattern-2.svg"
+          alt="background pattern"
+        />
+        <div class="container auto-flex">
           <div class="vertical-spacer hero__details">
-            <h1>Data tailored to your needs.</h1>
+            <h1>
+              Data <span class="green-underline">tailored</span> to your needs.
+            </h1>
             <a href="#" class="primary-btn">Learn more</a>
           </div>
-          <img src="./images/image-hero.webp" alt="hero image" />
+          <img
+            class="hero__img"
+            src="./images/image-hero.webp"
+            alt="hero image"
+          />
         </div>
       </section>
       <!-- FEATURES -->
       <section class="features-container">
         <div class="container">
-          <div class="features vertical-spacer">
+          <div class="features">
             <!-- FEATURE START -->
             <div class="features__feature vertical-spacer">
               <p class="feature__number">1</p>
-              <h3 class="feature__heading">Actionable insights</h3>
-              <p class="feature__body">
-                improve customer satisfaction and stay ahead of the competition
-                with our product data analytics.
-              </p>
+              <div class="vertical-spacer">
+                <h3 class="feature__heading">Actionable insights</h3>
+                <p class="feature__body">
+                  improve customer satisfaction and stay ahead of the
+                  competition with our product data analytics.
+                </p>
+              </div>
             </div>
             <!-- FEATURE END -->
             <!-- FEATURE START -->
             <div class="features__feature vertical-spacer">
               <p class="feature__number">2</p>
-              <h3 class="feature__heading">Data-driven decisions</h3>
-              <p class="feature__body">
-                Make data-driven decisions with our product data analytics. Our
-                AI-generated reports help you unlock insights hidden in your
-                product data.
-              </p>
+              <div class="vertical-spacer">
+                <h3 class="feature__heading">Data-driven decisions</h3>
+                <p class="feature__body">
+                  Make data-driven decisions with our product data analytics.
+                  Our AI-generated reports help you unlock insights hidden in
+                  your product data.
+                </p>
+              </div>
             </div>
             <!-- FEATURE END -->
             <!-- FEATURE START -->
             <div class="features__feature vertical-spacer">
               <p class="feature__number">3</p>
-              <h3 class="feature__heading">Always affordable</h3>
-              <p class="feature__body">
-                Always affordable pricing that scales with your business. Get
-                top-quality product data analytics services without hidden costs
-                or unexpected fees.
-              </p>
+              <div class="vertical-spacer">
+                <h3 class="feature__heading">Always affordable</h3>
+                <p class="feature__body">
+                  Always affordable pricing that scales with your business. Get
+                  top-quality product data analytics services without hidden
+                  costs or unexpected fees.
+                </p>
+              </div>
             </div>
             <!-- FEATURE END -->
           </div>
@@ -81,20 +103,27 @@
       <!-- CTA -->
       <section class="cta">
         <div class="container">
-          <img
-            class="cta__founder"
-            src="./images/image-founder.webp"
-            alt="founder image"
-          />
-          <div class="cta__details vertical-spacer">
-            <h2>Be the first to test</h2>
-            <p>
-              Hi, I'm Louis Graham, the founder of the company. Book a demo call
-              with me to become a beta tester for our app and kickstart your
-              company. Apply for access below and I’ll be in touch to schedule a
-              call.
-            </p>
-            <a href="#" class="primary-btn">Apply for access</a>
+          <div class="cta__wrapper">
+            <img
+              class="cta__founder"
+              src="./images/image-founder.webp"
+              alt="founder image"
+            />
+            <div class="cta__details vertical-spacer">
+              <h2>Be the first to test</h2>
+              <p>
+                Hi, I'm Louis Graham, the founder of the company. Book a demo
+                call with me to become a beta tester for our app and kickstart
+                your company. Apply for access below and I’ll be in touch to
+                schedule a call.
+              </p>
+              <a href="#" class="primary-btn">Apply for access</a>
+              <img
+                class="bg-p-cta"
+                src="./images/bg-pattern-3.svg"
+                alt="background pattern"
+              />
+            </div>
           </div>
         </div>
       </section>
