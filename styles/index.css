@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+:root {
+  /* COLORS */
+  --dark-purple: #24053e;
+  --semi-white: #fcf8ff;
+  --gray: #584d62;
+  --green: #44ffa1;
+
+  /* TYPOGRAPHY */
+  --fs-h1: 5rem;
+  --fs-h2: 3.2rem;
+  --fs-h3: 2.8rem;
+  --fs-h4: 2rem;
+  --fs-body: 1.6rem;
+  --ff-primary: 'Fraunces', serif;
+  --ff-body: 'Manrope', sans-serif;
+  --fw-700: 700;
+  --fw-600: 600;
+  --fw-400: 400;
+
+  /* SPACING */
+  --p-inline-small: 1.6rem;
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: 1.5;
+  background-color: var(--semi-white);
+  font-weight: var(--fw-400);
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-600);
+}
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-600);
+}
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-600);
+}
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+a,
+a:link,
+a:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: var(--fs-body);
+  font-weight: var(--fw-700);
+}
+
+.container {
+  max-width: 1440px;
+  padding-inline: var(--p-inline-small);
+  margin-inline: auto;
+}
