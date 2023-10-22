@@ -44,14 +44,18 @@ body {
 h1 {
   font-size: var(--fs-h1);
   font-weight: var(--fw-600);
+  font-family: var(--ff-primary);
+  line-height: 1;
 }
 h2 {
   font-size: var(--fs-h2);
   font-weight: var(--fw-600);
+  font-family: var(--ff-primary);
 }
 h3 {
   font-size: var(--fs-h3);
   font-weight: var(--fw-600);
+  font-family: var(--ff-primary);
 }
 img,
 svg {
@@ -71,4 +75,90 @@ a:visited {
   max-width: 1440px;
   padding-inline: var(--p-inline-small);
   margin-inline: auto;
+}
+.bg-dark {
+  background: var(--dark-purple);
+  color: #fff;
+}
+.auto-flex {
+  display: flex;
+  flex-direction: var(--flex-direction, row);
+  justify-content: var(--justify-content, space-between);
+}
+.primary-btn {
+  padding: 1.2rem 2.3rem;
+  background: var(--green);
+  cursor: pointer;
+  color: var(--dark-purple);
+}
+.primary-btn:hover {
+  background: var(--dark-purple);
+  border: 0;
+  outline: 2px solid var(--green);
+  color: var(--green);
+}
+.secondary-btn {
+  border-bottom: 3px solid var(--green);
+  line-height: 1.9;
+  cursor: pointer;
+  color: #fff;
+}
+.secondary-btn:hover {
+  color: var(--green);
+}
+
+.vertical-spacer > * + * {
+  margin-top: var(--vertical-space, 2rem);
+}
+/* HEADER */
+header {
+  padding-block: 3.7rem;
+}
+.logo {
+  width: 9.5rem;
+}
+
+/* HERO */
+.hero {
+  --flex-direction: column;
+  --vertical-space: 4rem;
+  align-items: center;
+  background: url('../images/hero-bg-pattern.svg');
+  background-position: bottom;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+.hero__details {
+  margin-top: 5rem;
+}
+.hero img {
+  transform: translateY(11rem);
+}
+
+/* features */
+.features-container {
+  color: var(--dark-purple);
+  margin-top: 20rem;
+  text-align: center;
+  background: var(--semi-white);
+}
+.features__feature {
+  margin-bottom: 6rem;
+  --vertical-space: 2rem;
+}
+.feature__number {
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--gray);
+  margin-inline: auto;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-h4);
+}
+.feature__body {
+  font-weight: var(--fw-400);
+  opacity: 0.75;
 }
